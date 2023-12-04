@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>请勿直接使用此网站!</title>
+        <style type="text/css">
+            #iframe-container {
+                position: relative;
+                width: 100%;
+                padding-bottom: 75%; /* 16:9 aspect ratio */
+                height: 0;
+            }
+            
+            #iframe-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            
+        </style>
+    </head>
+    <body>
+    
+        <div id="iframe-container">
+            <iframe name="webview" src="https://www.bilibili.com" id="webview" frameborder = '0' onload="ui_loaded()"></iframe>
+        </div>
+        <script src="bili.js"></script>
+    </body>
+</html>
