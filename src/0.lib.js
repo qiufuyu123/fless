@@ -7,6 +7,7 @@ function randomString(e) {
     return '_q_'+n;
 }
 
+
 function inject_js(txt){
     let tmp = document.createElement('script');
     tmp.innerText = txt;
